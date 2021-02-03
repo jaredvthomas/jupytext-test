@@ -26,11 +26,13 @@ import numpy as np
 ```python
 df = pd.Series(range(10))
 df = pd.DataFrame(df)
-df['random'] = np.random.randint(0,10,(10,))
+df['random'] = np.random.randint(0,20,(10,))
+df['constant'] = 1
 ```
 
 ```python
-df = pd.read_csv('output.csv')
+df = pd.read_csv('output.xlsx')
+# want excel instead of csv
 ```
 
 # Summary
